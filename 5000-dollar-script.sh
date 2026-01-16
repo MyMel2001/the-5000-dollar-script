@@ -23,7 +23,7 @@ apps=(
   org.blender.Blender
   org.kde.kdenlive
   org.inkscape.Inkscape
-  org.freecadweb.FreeCAD
+  org.freecad.FreeCAD
   org.darktable.Darktable
   net.scribus.Scribus
   com.obsproject.Studio
