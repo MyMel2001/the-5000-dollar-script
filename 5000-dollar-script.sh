@@ -2,6 +2,7 @@
 
 # Title: The 5,000 Dollar Script
 # Description: Installs the Zorin "Pro" creative suite of FOSS apps via Flatpak.
+# "Made to spite Zorin's dirty (yet totally legal) practice of selling FOSS apps and making them paid."
 # License: CC0 1.0 Universal
 
 echo "-------------------------------------------------------"
