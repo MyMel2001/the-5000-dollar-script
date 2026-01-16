@@ -7,6 +7,8 @@ Zorin OS Pro charges a fee to pre-install a curated list of applications, claimi
 
 This script allows users on **Zorin OS Core**, Linux Mint, Fedora, or any other distro with Flatpak support to install that same professional-grade suite with a single command. Use your money to donate directly to the individual projects (like Blender, Krita, or Kdenlive) instead.
 
+While Zorin has increased their 'Pro' price to $47.99, the cost of freedom hasn't changed. The software installed by this script still costs $0 - just as it should.
+
 ## A small, but notable note
 
 This does ***NOT*** magically give you the desktop layouts in Zorin Pro, just the FOSS apps that are alternatives to proprietary software that Zorin sells as "alternatives to
