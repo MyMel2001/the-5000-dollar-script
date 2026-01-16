@@ -77,6 +77,12 @@ echo -e "\nInstalling ${#apps[@]} professional-grade applications..."
 flatpak install flathub "${apps[@]}" -y
 
 echo "-------------------------------------------------------"
+echo "Removing excecss bloat, this should only take a few moments..."
+echo "-------------------------------------------------------"
+
+flatpak uninstall --unused -y
+
+echo "-------------------------------------------------------"
 echo "Installation complete. Your system is now worth an extra \$5,000"
 echo "in software value (according to Zorin logic)."
 echo "-------------------------------------------------------"
