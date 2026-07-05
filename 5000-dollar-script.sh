@@ -42,8 +42,7 @@ echo "Which Office Suite would you like?"
 echo "1) LibreOffice (Standard)"
 echo "2) OnlyOffice (Best MS Office compatibility)"
 echo "3) Both"
-echo "4) None"
-read -p "Select an option [1-4]: " office_choice
+read -p "Select an option [1-3]: " office_choice
 
 case $office_choice in
     1) apps+=(org.libreoffice.LibreOffice) ;;
@@ -66,12 +65,27 @@ case $image_choice in
     *) echo "Skipping Image Editors..." ;;
 esac
 
-# Choice: Email
-echo -e "\nWould you like to install Thunderbird (Email & Calendar)?"
-read -p "Install Thunderbird? [y/N]: " thunder_choice
-if [[ "$thunder_choice" =~ ^([yY][eE][sS]|[yY])$ ]]; then
-    apps+=(org.mozilla.Thunderbird)
-fi
+echo -e "\nWhich E-mail solution would you like?"
+echo "1) Tuta"
+echo "2) Thunderbird (Outlook alternative)"
+echo "3) Both"
+read -p "Select an option [1-3]: " email_choice
+
+case $email_choice in
+    1) apps+=(com.tutanota.Tutanota) ;;
+    2) apps+=(org.mozilla.Thunderbird) ;;
+    3) apps+=(org.mozilla.Thunderbird com.tutanota.Tutanota) ;;
+    *) echo "Skipping E-Mail solutions..." ;;
+esac
+
+echo -e "\nType '42' for some apps useful for playing games exclusive to Retro systems and Windows."
+echo "1) Tuta"
+read -p "Select an option [42]: " gaming_choice
+
+case $gaming_choice in
+    42) apps+=(org.vinegarhq.Sober com.valvesoftware.Steam com.github.k4zmu2a.spacecadetpinball com.heroicgameslauncher.hgl org.libretro.RetroArch) ;;
+    *) echo "Skipping Game stuff..." ;;
+esac
 
 echo -e "\nInstalling ${#apps[@]} professional-grade applications..."
 
