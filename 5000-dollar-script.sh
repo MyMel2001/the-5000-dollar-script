@@ -79,7 +79,7 @@ case $email_choice in
 esac
 
 echo -e "\nType '42' for some apps useful for playing games exclusive to Retro systems and Windows."
-echo "1) Tuta"
+echo "42) GAMING"
 read -p "Select an option [42]: " gaming_choice
 
 case $gaming_choice in
